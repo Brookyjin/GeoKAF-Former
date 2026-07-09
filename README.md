@@ -39,11 +39,6 @@ Red skeletons indicate corrected predictions, green skeletons denote ground trut
 
 ![CMU Panoptic RGB-D Qualitative Results](panoptic_qualitative.png)
 
-### Ablation
-
-The ablation results show that local RGB-D tokens, reliability modeling, bone-length consistency, and skeleton-topology guidance contribute to more stable 3D pose correction.
-
-![Parameter Ablation](param_ablation.png)
 
 ## Status
 
@@ -53,8 +48,4 @@ This repository is being prepared for public release. The following materials wi
 - dataset preparation scripts;
 - model configuration files;
 - pretrained checkpoints where available;
-- instructions for reproducing the reported results.
 
-## Citation
-
-The paper is currently under preparation. Citation information will be updated after publication.
