@@ -10,7 +10,7 @@ GeoKAF-Former is an RGB-D 3D human pose estimation framework that combines human
 
 Instead of densely fusing the whole RGB-D image, point cloud, or voxel space, GeoKAF-Former focuses on local evidence around human joints. This design reduces redundant background information and makes the backend concentrate on joint-level RGB-D geometry and skeleton consistency.
 
-![Overview](assets/github_readme/overview.jpg)
+![Overview](overview.jpg)
 
 ## Method
 
@@ -20,7 +20,7 @@ The framework contains three main parts:
 - **RGB-D geometry-aware lifting**: uses camera calibration and robust local depth estimation to obtain an initial 3D skeleton.
 - **GeoKAF-Former correction**: refines the initial skeleton with local RGB-D tokens, reliability-aware gating, bidirectional cross-feature attention, and skeleton hop-distance bias.
 
-![Model Structure](assets/github_readme/model_structure.png)
+![Model Structure](model_structure.png)
 
 ## Results
 
@@ -35,15 +35,15 @@ GeoKAF-Former is evaluated on **MVOR** and **CMU Panoptic RGB-D**. The model ach
 
 Red skeletons indicate corrected predictions, green skeletons denote ground truth, and yellow dashed skeletons denote geometric initial poses.
 
-![MVOR Qualitative Results](assets/github_readme/mvor_qualitative.png)
+![MVOR Qualitative Results](mvor_qualitative.png)
 
-![CMU Panoptic RGB-D Qualitative Results](assets/github_readme/panoptic_qualitative.png)
+![CMU Panoptic RGB-D Qualitative Results](panoptic_qualitative.png)
 
 ### Ablation
 
 The ablation results show that local RGB-D tokens, reliability modeling, bone-length consistency, and skeleton-topology guidance contribute to more stable 3D pose correction.
 
-![Parameter Ablation](assets/github_readme/param_ablation.png)
+![Parameter Ablation](param_ablation.png)
 
 ## Status
 
